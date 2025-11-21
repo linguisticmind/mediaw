@@ -222,8 +222,8 @@ The following keybindings are available for this script:
 | Key | Name | Description |
 | --- | --- | --- |
 | `Ctrl+t` | `mediaw-start` | Start tracking. |
-| `Ctrl+T` | `mediaw-start-retro` | Start tracking and retroactively correct the start time to the time when the file was open. |
-| `Ctrl+Alt+t` | `mediaw-stop` | Stop tracking. |
+| `Ctrl+Alt+t` | `mediaw-start-retro` | Start tracking and retroactively correct the start time to the time when the file was open. |
+| `Ctrl+T` | `mediaw-stop` | Stop tracking. |
 | `Ctrl+Alt+T` | `mediaw-cancel` | Stop tracking and delete the entry. |
 | `Ctrl+SPACE` | `mediaw-pause` | Pause playback and tracking. Tracking will resume when the player is unpaused. |
 | `Ctrl+Alt-SPACE` | `mediaw-pause-on-next` | Pause playback and tracking when the next file in the playlist is reached. |
