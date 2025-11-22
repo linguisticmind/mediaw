@@ -2,6 +2,31 @@
 
 Mediawarrior is a time-tracking plugin for [mpv](https://github.com/mpv-player/mpv/). It talks to [Timewarrior](https://github.com/GothenburgBitFactory/timewarrior) to help you track what you watch or listen to in mpv player. Language learners will appreciate Mediawarrior's ability to automatically add a language tag to a Timewarrior entry and an increased awareness of how much time you spend consuming content in your target language.
 
+Video tutorials:
+
+<table>
+    <tr>
+        <td align='center'>
+            <b>Mediawarrior v0.1.0</b>
+        </td>
+        <td align='center'>
+            Related: <a href='https://github.com/linguisticmind/watchtower'><b>watchtower</b></a><br>(useful Timewarrior-related scripts)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href='https://www.youtube.com/watch?v=PIY8OpESyt4'>
+                <img src='https://img.youtube.com/vi/PIY8OpESyt4/0.jpg' alt='Mindful Technology - Mediawarrior: a time tracker for mpv' width='360'>
+            </a>
+        </td>
+        <td>
+            <a href='https://www.youtube.com/watch?v=LVvM3Yq7yGo'>
+                <img src='https://img.youtube.com/vi/LVvM3Yq7yGo/0.jpg' alt='Mindful Technology - watchtower: organize your favorite tasks for the watch command' width='360'>
+            </a>
+        </td>
+    </tr>
+</table>
+
 <a href='https://ko-fi.com/linguisticmind'><img src='https://github.com/linguisticmind/linguisticmind/raw/master/res/kofi/kofi_donate_1.svg' alt='Support me on Ko-fi' height='48'></a>
 
 ## Changelog
