@@ -119,7 +119,9 @@ timew.start = function(opts)
         local props = split_str(script_opts.language_props_check)
 
         while #props > 0 do
-          timew_data.language = mp.get_property(props[1])
+          local value = mp.get_property(props[1])
+          if value == '' then value = nil end
+          timew_data.language = value
           if timew_data.language ~= nil then break end
           table.remove(props, 1)
         end
