@@ -181,7 +181,7 @@ setmetatable(mediaw.start_when_unpaused, {
   __call = function(t, name, value)
     if value == false then
       if t.msg ~= nil then
-        if type(t.msg) == 'function' then t.msg = t.msg() end
+        if type(t.msg) == 'function' then t.msg = t.msg(t) end
         msg_tools.osd_and_debug(t.msg)
       end
       mediaw.state.started = true
@@ -217,12 +217,22 @@ mediaw.start = function(opts)
 
     else
 
-      msg_tools.osd_and_debug('mediaw: arm (-' .. retro:diff() .. ')')
+      if opts.retro == false then
+        msg_tools.osd_and_debug('mediaw: arm')
+      else
+        msg_tools.osd_and_debug('mediaw: arm (-' .. retro:diff() .. ')')
+      end
 
       mediaw.state.armed = true
 
       mediaw.start_when_unpaused.retro = opts.retro
-      mediaw.start_when_unpaused.msg = function() return 'mediaw: start (-' .. retro:diff() .. ')' end
+      mediaw.start_when_unpaused.msg = function(t)
+        if t.retro == false then
+          return 'mediaw: start'
+        else
+          return 'mediaw: start (-' .. retro:diff() .. ')'
+        end
+      end
       mp.observe_property('pause', 'native', mediaw.start_when_unpaused)
 
     end
