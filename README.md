@@ -34,14 +34,17 @@ Video tutorials:
 <table>
     <tr>
         <td>
-            <a href='https://github.com/linguisticmind/mediaw/releases/tag/v0.1.0'>0.1.0</a>
+            <a href='https://github.com/linguisticmind/mediaw/releases/tag/v0.1.1'>0.1.1</a>
         </td>
         <td>
-            2025-11-21
+            2025-11-23
         </td>
         <td>
             <p>
-                Initial release.
+                Fixed an issue with <code>language_props_check</code>: was unable to get past <code>slang</code> or <code>alang</code> in the check sequence, whichever came first.
+            </p>
+            <p>
+                Fixed erroneous OSD messages: when arming tracking while the player is paused, retro time difference would be displayed even if armed in non-retro mode.
             </p>
         </td>
     </tr>
