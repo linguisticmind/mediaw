@@ -79,7 +79,7 @@ local retro = {}
 
 retro.date = nil
 retro.set = function(self) self.date = os.date('!*t') end
-retro.get = function(self) return os.date('!%Y-%m-%dT%H:%M:%SZ', os.time(self.date)) end
+retro.get = function(self) return os.date('%Y-%m-%dT%H:%M:%SZ', os.time(self.date)) end
 retro.diff = function(self)
   local t = os.difftime(os.time(os.date('!*t')), os.time(self.date))
   local s = t % 60; local r = t - s
