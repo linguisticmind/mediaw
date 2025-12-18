@@ -29,7 +29,7 @@ local func_config = function(func, opts)
       for k, v in pairs(t) do
         if arg[i][k] == nil then arg[i][k] = v end
       end
-      func(table.unpack(arg))
+      return func(table.unpack(arg))
     end
   }
 
