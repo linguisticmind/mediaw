@@ -8,6 +8,19 @@
     </tr>
     <tr>
         <td>
+            <a href='https://github.com/linguisticmind/mediaw/releases/tag/v0.1.2'>0.1.2</a>
+        </td>
+        <td>
+            2025-12-18
+        </td>
+        <td>
+            <p>
+                Fixed a timezone conversion issue: was setting a wrong date/time when using <code>mediaw-start-retro</code>.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <a href='https://github.com/linguisticmind/mediaw/releases/tag/v0.1.1'>0.1.1</a>
         </td>
         <td>

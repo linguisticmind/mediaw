@@ -14,7 +14,7 @@
 -- You should have received a copy of the GNU General Public License
 -- along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
--- version: 0.1.1
+-- version: 0.1.2
 
 package.path = mp.get_script_directory() .. '/lib/?.lua;' .. mp.get_script_directory() .. '/lib/?/init.lua;' .. package.path
 
