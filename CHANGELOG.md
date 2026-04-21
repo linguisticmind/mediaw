@@ -8,6 +8,19 @@
     </tr>
     <tr>
         <td>
+            <a href='https://github.com/linguisticmind/mediaw/releases/tag/v0.1.3'>0.1.3</a>
+        </td>
+        <td>
+            2026-04-21
+        </td>
+        <td>
+            <p>
+                Fixed another timezone conversion issue: was setting a wrong date/time when using <code>mediaw-start-retro</code> while the <code>TZ</code> environment variable is set.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <a href='https://github.com/linguisticmind/mediaw/releases/tag/v0.1.2'>0.1.2</a>
         </td>
         <td>
