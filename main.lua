@@ -14,7 +14,7 @@
 -- You should have received a copy of the GNU General Public License
 -- along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
--- version: 0.1.2
+-- version: 0.1.3
 
 package.path = mp.get_script_directory() .. '/lib/?.lua;' .. mp.get_script_directory() .. '/lib/?/init.lua;' .. package.path
 
@@ -78,10 +78,10 @@ if script_opts.dry_run == true then msg.warn('Dry run.') end
 local retro = {}
 
 retro.date = nil
-retro.set = function(self) self.date = os.date('!*t') end
-retro.get = function(self) return os.date('%Y-%m-%dT%H:%M:%SZ', os.time(self.date)) end
+retro.set = function(self) self.date = os.date('*t') end
+retro.get = function(self) return os.date('!%Y-%m-%dT%H:%M:%SZ', os.time(self.date)) end
 retro.diff = function(self)
-  local t = os.difftime(os.time(os.date('!*t')), os.time(self.date))
+  local t = os.difftime(os.time(os.date('*t')), os.time(self.date))
   local s = t % 60; local r = t - s
   local h = math.floor(r / 3600); r = r - (h * 3600)
   local m = r / 60
